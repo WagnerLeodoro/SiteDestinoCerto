@@ -1,0 +1,26 @@
+@using destinoCerto.Models
+@model Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+<section id="login" class="login">
+    <div class="title">
+        <h2>Login</h2>
+    </div>
+    <div class="form-container">
+        <form asp-action="Login" method="POST">
+            <div>
+                <label asp-for="Login">Login:</label>
+                <input asp-for="Login" />
+            </div>
+            <div>
+                <label asp-for="Senha">Senha:</label>
+                <input asp-for="Senha" type="password" />
+            </div>
+            <div>
+                <input type="submit" value="Entrar" />
+            </div>
+        </form>
+    </div>
+</section>
+<p id="pMensagem">@ViewBag.Mensagem</p>

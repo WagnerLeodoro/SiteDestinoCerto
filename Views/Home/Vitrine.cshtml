@@ -1,0 +1,37 @@
+﻿@using destinoCerto.Models
+@model IEnumerable<PacotesTuristicos>
+@{
+    ViewData["Title"] = "Lista de Pacotes";
+}
+<section id="list">
+    <div class="title">
+        <h2>Pacotes Disponíveis</h2>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Atrativos</th>
+                    <th>Saída</th>
+                    <th>Retorno</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (PacotesTuristicos p in Model)
+                {
+                    <tr>
+                        <td>@p.Nome</td>
+                        <td>@p.Origem</td>
+                        <td>@p.Destino</td>
+                        <td>@p.Atrativos</td>
+                        <td>@p.Saida.ToString("dd/MM/yyyy")</td>
+                        <td>@p.Retorno.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>

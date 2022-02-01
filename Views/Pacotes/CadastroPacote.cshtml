@@ -1,0 +1,59 @@
+@using destinoCerto.Models
+@model PacotesTuristicos
+
+@{
+    ViewData["Title"] = "Novo Pacote Turístico";
+}
+
+<section id="cadastro-pct">
+    <div class="title">
+        <h2>Novo Pacote Turístico</h2>
+    </div>
+    <div class="form-container">
+        <form asp-action="CadastroPacote" method="POST">
+            <div class="formRow">
+                <label asp-for="Nome">Nome:</label>
+            </div>
+            <div class="formRow">
+                <input asp-for="Nome" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Origem">Origem:</label>
+            </div>
+            <div class="formRow">
+                <input type="text" asp-for="Origem" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Destino">Destino:</label>
+            </div>
+            <div class="formRow">
+                <input asp-for="Destino" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Atrativos">Atrativos:</label>
+            </div>
+            <div class="formRow">
+                <textarea rows="3" asp-for="Atrativos"></textarea>
+            </div>
+            <div class="formRow">
+                <label asp-for="Saida">Data de Saída:</label>
+            </div>
+            <div class="formRow">
+                <input type="date" asp-for="Saida" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Retorno">Data de Retorno:</label>
+            </div>
+            <div class="formRow">
+                <input type="date" asp-for="Retorno" />
+                <input type="hidden" asp-for="Usuario" />
+            </div>
+            <div class="formRow">
+                <input type="submit" value="Cadastrar" />
+            </div>
+        </form>
+    </div>
+    <div class="message">
+        <p id="pMensagem">@ViewBag.Mensagem</p>
+    </div>
+</section>

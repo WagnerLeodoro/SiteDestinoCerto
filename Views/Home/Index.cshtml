@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="welcome" class="welcome-section">
+    <div class="intro-section">
+        <div class="container">
+            <div class="intro-title">
+                <h1>Bem vindo a Destino Certo</h1>
+            </div>
+            <div class="cards">
+                <div class="content-cards-left">
+                    <p>Nosso trabalho vai além de indicar um itinerário, com passagem aérea, hotéis, passeios e
+                        traslados. Nos dedicamos para que você possa tirar o melhor proveito da sua viagem,
+                        oferecendo informações e dicas que vão incrementar a sua experiência. Acreditamos que a
+                        única preocupação do viajante deve ser vivenciar, da melhor maneira, os momentos únicos
+                        propiciados pela viagem.</p>
+                </div>
+                <div class="content-cards-right">
+                    <h2>Comentários</h2>
+                    <p>A Destino Certo fez um excelente trabalho. Nos deu todo o apoio e suporte que precisamos para
+                        fazer nossa tão viagem dos sonhos. Obrigado Destino Certo por fazer nosso sonho se
+                        tornar realiadade sem nenhuma dor de cabeça!</p>
+                </div>
+            </div>
+            <div id="gallery" class="gallery" aria-label="Gallery">
+                <div class="photos">
+                    <img src="~/img/bgintro.png" alt="Curitiba" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <h3>Confira nossos pacotes disponíveis e reserve já o seu</h3>
+        <a type="button" id="pacotes" asp-area="" asp-controller="Home" asp-action="Vitrine">Conferir</a>
+    </div>
+
+</section>

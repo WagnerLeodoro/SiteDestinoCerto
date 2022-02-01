@@ -1,0 +1,39 @@
+@using destinoCerto.Models
+@model Usuario;
+@{
+    ViewData["Title"] = "Edição de Usuário";
+}
+
+<section id="user-signup">
+    <div class="formHeader">
+        <h2>Edição de Usuário</h2>
+    </div>
+    <div class="form-container">
+        <form class="form" asp-action="Editar" method="POST">
+            <input type="hidden" asp-for="Id" />
+            <div class="formRow">
+                <label asp-for="Nome">Nome:</label>
+                <input type="text" asp-for="Nome" />
+            </div>
+            <div class="formRow">
+                <label asp-for="DataNascimento">Data de Nascimento:</label>
+                <input type="date" asp-for="DataNascimento" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Login">Login:</label>
+                <input type="text" asp-for="Login" />
+            </div>
+            <div class="formRow">
+                <label asp-for="Senha">Senha:</label>
+                <input type=password asp-for="Senha" />
+            </div>
+            <div>
+                <input type="submit" class="btn-primary" value="Cadastrar" action />
+            </div>
+        </form>
+    </div>
+
+    <div class="message">
+        <p id="pMensagem">@ViewBag.Mensagem</p>
+    </div>
+</section>
