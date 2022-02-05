@@ -44,3 +44,4 @@
 /home/wagnerleodoro/Documentos/curso-ipi-senac/Disciplinas/estruturarBD/atv02/destinoCerto/bin/Debug/net5.0/MySqlConnector.dll
 /home/wagnerleodoro/Documentos/curso-ipi-senac/Disciplinas/estruturarBD/atv02/destinoCerto/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
 /home/wagnerleodoro/Documentos/curso-ipi-senac/Disciplinas/estruturarBD/atv02/destinoCerto/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+/home/wagnerleodoro/Documentos/curso-ipi-senac/Disciplinas/estruturarBD/atv02/destinoCerto/bin/Debug/net5.0/global.json
